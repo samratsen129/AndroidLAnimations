@@ -1,7 +1,7 @@
 # AndroidLAnimations
 Compilation of Material Design and Animations with RecyclerView
 
-The project uses Material design styles and themes and is tested till Android 4.0
+The project uses Material design styles and themes and should work from ICS devices to Lollipop
 
 ------------------------------------------------------------
 
