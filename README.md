@@ -9,23 +9,38 @@ There are primarily two fragments :
 
 a) BasicFragment
 
-  Several Features have been implemented here
+  Features that have been palyed around with here -
+  
   i)    Use of Recycler View with Card View
+  
   ii)   Use of Default Animations for Recycler View Remove/Delete feature
+  
   iii)  Use of Custom "slide in from left" Animation for the recycler view list when app is started
+  
   iv)   Use of Swipe to Delete (drag the image to right) for deleting a row
+  
   v)    Use of Snackbar for validation when a delete is completed
+  
   vi)   Expand Recycler View with animation when the text is touched
+  
   vii)  Use of Floating button library for adding a row
+  
   viii) Use of Ripple Animation library for ripples whenever button, or actionable text is touched
+  
   xi)   Use of the Reachability library for Reachability feature (from iOS)
+  
+  x)    Use of new Toolbar widget and the drawer menu
   
   Thanks to Android for Material Design 
   
   Special Thanks to ...
+  
   sakebook for the reachability library - https://github.com/sakebook/Reachability
+  
   William Mora for the Snackbar library - https://github.com/nispok/snackbar
+  
   Melnykov Oleksandr for Floating Button library - https://github.com/makovkastar/FloatingActionButton
+  
   Robin Chutaux for Ripple Animation library -https://github.com/traex/RippleEffect
   
 ------------------------------------------------------------
