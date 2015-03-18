@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Animations &amp; Material</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_new">Add</string>
+    <string name="remove_label">Remove</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_basic">Basic</string>
+    <string name="title_adv_recycler">Advance Recycler Lib</string>
+    <string name="navigation_drawer_open">Open Drawer</string>
+    <string name="navigation_drawer_close">Close Drawer</string>
+</resources>

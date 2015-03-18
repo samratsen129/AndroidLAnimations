@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_dark">#512da8</color>
+    <color name="accent">#ffc400</color>
+    <color name="text_primary">#D9FFFFFF</color>
+    <color name="text_secondary">#D9000000</color>
+    <color name="image_tint">#88101010</color>
+    <color name="primary">#3f51b5</color>
+    <color name="primary_pressed">#303f9f</color>
+    <color name="ripple">#ff80ab</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="color_window_background">#ffffff</color>
+
+    <color name="bg_item_normal_state">#fff0f0f0</color>
+    <color name="bg_item_normal_pressed_state">#ffe0e0e0</color>
+    <color name="bg_item_dragging_state">#ffffdddd</color>
+    <color name="bg_item_dragging_active_state">#ffff9999</color>
+    <color name="bg_item_swiping_state">#ffddddff</color>
+    <color name="bg_item_swiping_active_state">#ff9999ff</color>
+
+    <color name="bg_swipe_item_neutral">#ffffffff</color>
+    <color name="bg_swipe_item_left">#fff9930d</color>
+    <color name="bg_swipe_item_right">#ff2f8b2a</color>
+    <color name="bg_swipe_group_item_left">#fff45f30</color>
+    <color name="bg_swipe_group_item_right">#ff295db3</color>
+</resources>
