@@ -17,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -39,8 +40,11 @@ public class ListView1Adapter extends RecyclerView.Adapter<ListView1Adapter.View
         this.mTouchListener = mTouchListener;
     }
 
-    public void loadData(List<Data1> data1){
-        this.data1=data1;
+    public void loadData(Data1 data){
+        if (this.data1==null){
+            this.data1 = new ArrayList<Data1>();
+        }
+        this.data1.add(data);
         notifyDataSetChanged();
     }
 

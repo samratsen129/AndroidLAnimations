@@ -78,7 +78,7 @@ public class NavigationDrawerFragment extends Fragment {
         }
 
         mReachability = new Reachability(getActivity());
-        mReachability.makeHoverView(Reachability.Position.RIGHT);
+        mReachability.makeHoverView(Reachability.Position.LEFT);
         mReachability.setBackColor(Color.WHITE);
         mReachability.canTouchableBackView(false);
 

@@ -27,6 +27,7 @@ import com.nispok.snackbar.Snackbar;
 import com.nispok.snackbar.SnackbarManager;
 import com.nispok.snackbar.listeners.ActionClickListener;
 
+import java.util.Date;
 import java.util.HashMap;
 
 public class BasicFragment extends Fragment implements View.OnClickListener{
@@ -99,7 +100,7 @@ public class BasicFragment extends Fragment implements View.OnClickListener{
     }
 
     public void onAddView(View v0){
-        mAdapterListView1.loadData(SampleData1.getInstance().addData(new Data1("Android iOS friends again!", R.drawable.android_ios)));
+        mAdapterListView1.loadData(new Data1("Android iOS friends again! " + (new Date()).toString(), R.drawable.android_ios));
         addButton.setEnabled(false);
         //TODO: DISABLE AND WAIT FOR ANIMATION TO END BEFORE ENABLING
         handler.postDelayed(new Runnable()
@@ -114,20 +115,6 @@ public class BasicFragment extends Fragment implements View.OnClickListener{
         }, 2000);
     }
 
-    public void removeItem(int position){
-        //mAdapterListView1.loadData(SampleData1.getInstance().removeData(position));
-        SnackbarManager.show(
-                Snackbar.with(getActivity())
-                        .text("Item Deleted")
-                        .duration(Snackbar.SnackbarDuration.LENGTH_SHORT)
-                        .actionLabel("Undo")
-                        .actionListener(new ActionClickListener() {
-                            @Override
-                            public void onActionClicked(Snackbar snackbar) {
-                                Toast.makeText(context, "TBD - Not Implemented", Toast.LENGTH_LONG);
-                            }
-                        }));
-    }
 
 /*    public class MyItemAnimator extends DefaultItemAnimator{
 
@@ -287,17 +274,18 @@ public class BasicFragment extends Fragment implements View.OnClickListener{
         // Delete the item from the adapter
         int position = listview.getChildPosition(viewToRemove);
         mAdapterListView1.removeItemFromList(position);
+        mAdapterListView1.notifyDataSetChanged();
         SnackbarManager.show(
                 Snackbar.with(getActivity())
                         .text("Item Deleted")
                         .duration(Snackbar.SnackbarDuration.LENGTH_SHORT)
                         .actionLabel("Undo")
                         .actionListener(new ActionClickListener() {
-                    @Override
-                    public void onActionClicked(Snackbar snackbar) {
-                        Toast.makeText(context, "TBD - Not Implemented", Toast.LENGTH_LONG);
-                    }
-                }));
+                            @Override
+                            public void onActionClicked(Snackbar snackbar) {
+                                Toast.makeText(context, "TBD - Not Implemented", Toast.LENGTH_LONG);
+                            }
+                        }));
 
         final ViewTreeObserver observer = listview.getViewTreeObserver();
         observer.addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() {
@@ -361,7 +349,7 @@ public class BasicFragment extends Fragment implements View.OnClickListener{
             onAddView(v);
         }
         if (v.getId() == R.id.fab){
-            mAdapterListView1.loadData(SampleData1.getInstance().addData(new Data1("TeamViewer for screen sharing!", R.drawable.teamviewer_ikon)));
+            mAdapterListView1.loadData(new Data1("TeamViewer for screen sharing! " + (new Date()).toString(), R.drawable.teamviewer_ikon));
             fab.setEnabled(false);
             //TODO: DISABLE AND WAIT FOR ANIMATION TO END BEFORE ENABLING
             handler.postDelayed(new Runnable() {
