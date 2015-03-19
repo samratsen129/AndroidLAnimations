@@ -43,22 +43,23 @@
 
                 />
         </com.andexert.library.RippleView>
-        <com.andexert.library.RippleView
+<!--        <com.andexert.library.RippleView
             android:id="@+id/more2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             ripple:rv_type="doubleRipple"
-            android:background="@android:color/white">
+            android:background="@android:color/white">-->
             <Button
                 android:id="@+id/button_remove"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/remove_label"
+                android:layout_alignParentRight="true"
                 android:textSize="15sp"
 
                 />
-        </com.andexert.library.RippleView>
+        <!--</com.andexert.library.RippleView>-->
         <LinearLayout
             android:id="@+id/expandable_ll"
             android:layout_width="match_parent"

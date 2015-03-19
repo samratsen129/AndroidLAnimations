@@ -24,11 +24,11 @@ public final class SampleData1 {
         if (arrayList!=null && !arrayList.isEmpty()) return arrayList;
 
         arrayList.add(new Data1("Amazon AWs", R.drawable.aws));
-        arrayList.add(new Data1("Microsoft Sharepoint", R.drawable.microsoft_sharepoint_logo));
+        //arrayList.add(new Data1("Microsoft Sharepoint", R.drawable.microsoft_sharepoint_logo));
         arrayList.add(new Data1("Android rocks", R.drawable.android));
         arrayList.add(new Data1("Microsoft outlook", R.drawable.outlook));
         arrayList.add(new Data1("Skype for calls", R.drawable.skype));
-        arrayList.add(new Data1("SVN for source control", R.drawable.svn));
+        //arrayList.add(new Data1("SVN for source control", R.drawable.svn));
 
         return arrayList;
     }

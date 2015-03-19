@@ -9,8 +9,7 @@
         android:id="@+id/more2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        ripple:rv_type="doubleRipple"
-        android:background="@android:color/white">
+        ripple:rv_type="doubleRipple">
         <Button
             android:id="@+id/button_add"
             android:layout_width="match_parent"

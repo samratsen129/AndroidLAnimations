@@ -100,7 +100,7 @@ public class BasicFragment extends Fragment implements View.OnClickListener{
     }
 
     public void onAddView(View v0){
-        mAdapterListView1.loadData(new Data1("Android iOS friends again! " + (new Date()).toString(), R.drawable.android_ios));
+        mAdapterListView1.loadData(new Data1("Android iOS friends again! ", R.drawable.android_ios));
         addButton.setEnabled(false);
         //TODO: DISABLE AND WAIT FOR ANIMATION TO END BEFORE ENABLING
         handler.postDelayed(new Runnable()
@@ -349,7 +349,7 @@ public class BasicFragment extends Fragment implements View.OnClickListener{
             onAddView(v);
         }
         if (v.getId() == R.id.fab){
-            mAdapterListView1.loadData(new Data1("TeamViewer for screen sharing! " + (new Date()).toString(), R.drawable.teamviewer_ikon));
+            mAdapterListView1.loadData(new Data1("TeamViewer for screen sharing! ", R.drawable.teamviewer_ikon));
             fab.setEnabled(false);
             //TODO: DISABLE AND WAIT FOR ANIMATION TO END BEFORE ENABLING
             handler.postDelayed(new Runnable() {

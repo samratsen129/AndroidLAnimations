@@ -3,6 +3,8 @@ package com.example.sam.androidlanimations.androidlanimations.adapters;
 import android.animation.Animator;
 import android.animation.ValueAnimator;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -58,6 +60,7 @@ public class ListView1Adapter extends RecyclerView.Adapter<ListView1Adapter.View
     public void onBindViewHolder(final ListView1Adapter.ViewHolder viewHolder, final int i) {
         Data1 data = data1.get(i);
         viewHolder.textView.setText(data.getName());
+        viewHolder.imageView.setImageBitmap(null);
         viewHolder.imageView.setImageResource(data.getImagePath());
         viewHolder.textViewDesc.setText(data.getNameDesc());
         viewHolder.removeButton.setEnabled(true);
@@ -75,6 +78,7 @@ public class ListView1Adapter extends RecyclerView.Adapter<ListView1Adapter.View
         viewHolder.removeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if ((i+1)>data1.size()) return;
                 Context ctx = v.getContext();
                 MainActivity activity = (MainActivity)ctx;
                 viewHolder.removeButton.setEnabled(false);
